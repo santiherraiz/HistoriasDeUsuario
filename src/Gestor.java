@@ -1,8 +1,11 @@
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Gestor {
-    public void menu() {
+    public void menu() throws IOException {
         Scanner sc = new Scanner(System.in);
+        ArrayList<Datos> datos = new ArrayList<>();
 
         boolean terminar = true;
 
@@ -12,7 +15,9 @@ public class Gestor {
             sc.nextLine();
             switch (opcion) {
                 case 1:
-                    System.out.println("1. Prueba");
+                    System.out.println("1. Crear incidencia");
+                    Datos datos1 = new Datos("Incidencia 1", Estado.ABIERTO);
+                    System.out.println("Incidencia creada");
                     break;
 
                 case 2:
@@ -20,6 +25,7 @@ public class Gestor {
                     TestConectividad tc = new TestConectividad();
 
                     tc.conectividad();
+
                     break;
 
                 case 3:

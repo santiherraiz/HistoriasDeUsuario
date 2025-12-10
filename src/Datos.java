@@ -4,7 +4,7 @@ public class Datos {
     private Estado estado;
     private static int contador = 0;
 
-    public Datos(int id, String titulo, Estado estado) {
+    public Datos(String titulo, Estado estado) {
         this.id = contador++;
         this.titulo = titulo;
         this.estado = estado;
