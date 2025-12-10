@@ -20,7 +20,7 @@ public class Gestor {
                     System.out.println("¿Qué incidencia has tenido?");
                     String titulo = sc.nextLine();
 
-                    Datos datos1 = new Datos( titulo, Estado.ABIERTO);
+                    datos.add(new Datos(titulo, Estado.ABIERTO));
                     System.out.println("Incidencia creada");
                     break;
 
