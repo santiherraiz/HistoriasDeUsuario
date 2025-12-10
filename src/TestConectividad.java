@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class TestConectividad {
     public void conectividad() throws IOException {
-        ProcessBuilder pb = new ProcessBuilder("ping", "-c", "5", "8.8.8.8");
+        ProcessBuilder pb = new ProcessBuilder("ping", "-w", "5", "8.8.8.8");
 
         Process p = pb.start();
 

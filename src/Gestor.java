@@ -16,7 +16,11 @@ public class Gestor {
             switch (opcion) {
                 case 1:
                     System.out.println("1. Crear incidencia");
-                    Datos datos1 = new Datos("Incidencia 1", Estado.ABIERTO);
+
+                    System.out.println("¿Qué incidencia has tenido?");
+                    String titulo = sc.nextLine();
+
+                    Datos datos1 = new Datos( titulo, Estado.ABIERTO);
                     System.out.println("Incidencia creada");
                     break;
 
